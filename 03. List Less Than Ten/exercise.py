@@ -7,7 +7,7 @@ and write a program that prints out all the elements of the list that are less t
 
 Extras:
 
-- Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.
+- Instead of printing the elements one by one, make a new list that has all the elements less than 10 from this list in it and print out this new list.
 
 """
 
@@ -16,7 +16,6 @@ new_list = []
 
 for x in given_list:
     if x < 10:
-        new_list.append(x)
-        #print(*new_list, end=', ')        
+        new_list.append(x)   
     
 print(new_list)

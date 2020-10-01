@@ -19,9 +19,11 @@ from tabulate import tabulate
 random_list_a = []
 random_list_b = []
 
-for i in range(0,30):
+for i in range(1,random.randint(2,30)):
     n = random.randint(1, 100)
     random_list_a.append(n)
+
+for j in range(1,random.randint(2,30)):
     m = random.randint(1, 100)
     random_list_b.append(m)
 

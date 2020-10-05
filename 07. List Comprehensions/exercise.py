@@ -6,7 +6,7 @@ Write one line of Python that takes this list a and makes a new list that has on
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 #one line code
-even_elements_in_a = [x for x in a if x % 2 == 0]
+even_elements = [x for x in a if x % 2 == 0]
 
 #just to see what happens
-print(even_elements_in_a)
+print(even_elements)

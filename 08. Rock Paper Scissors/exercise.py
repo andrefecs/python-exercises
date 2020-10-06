@@ -10,12 +10,12 @@ Scissors beats paper
 Paper beats rock
 """
 
-
-
+#introduction
 print ("\nHi! Welcome to the Rock-Paper-Scissors game!\n\nInvite your best friend and get ready to have lots of FUN!")
 
 game_control = input("\nAre you ready? Type 'yes' to start playing or 'no' to quit: ")
 
+#define function to verify both player's input
 def player_input_verification(player_input):
     player_input = player_input.lower()
     while player_input != "rock" and player_input != "paper" and player_input != "scissors":
@@ -23,11 +23,11 @@ def player_input_verification(player_input):
     return player_input
     
     
-
+#verify if there was a typo
 while game_control != "yes" and game_control != "no":
     game_control = input ("Typo? Type 'yes' to start playing or 'no' to quit: ")
 
-
+#the game will quit when the user types 'no' to continue
 while game_control != "no":
     print ("\nMake sure you choose between: rock, paper or scissors!\n")
     
@@ -62,6 +62,7 @@ while game_control != "no":
     elif player_one == "scissors" and player_two == "paper":
         print("\nPlayer one WIN!\n")
 
+    #ask if they want to play again
     game_control = input("\nDo you want to start a new game? Type 'no' to quit: ")
 
 print ("\n----Thanks for playing!----")

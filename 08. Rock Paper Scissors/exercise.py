@@ -32,7 +32,6 @@ while game_control != "no":
     print ("\nMake sure you choose between: rock, paper or scissors!\n")
     
     #player one
-    
     player_one = input("Player One: ")
     player_one = player_input_verification(player_one)
     

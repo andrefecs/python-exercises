@@ -33,7 +33,6 @@ with open("members.txt", "r") as readFile:
         with open("inactive.txt", "a") as testwritefile:
             Lines = readFile.readlines()
             line = 1
-            """ active_members = "Membership No  Date Joined  Active  \n" """
             for line in Lines:
                 if line != 1:
                     if line.find("no") != -1:

@@ -27,17 +27,23 @@ genFiles(memReg,exReg)
 
 # Here starts the magic
 removed_members = []
+active_members = ""
 
 with open("members.txt", "r") as readFile:
-    with open("inactive.txt", "a") as testwritefile:
-        next(readFile)
-        Lines = readFile.readlines()
-        for line in Lines:
-            if line != 1:
-                if line.find("no") != -1:
-                    testwritefile.write(line)
-                    removed_members.append(line)
+        with open("inactive.txt", "a") as testwritefile:
+            Lines = readFile.readlines()
+            line = 1
+            """ active_members = "Membership No  Date Joined  Active  \n" """
+            for line in Lines:
+                if line != 1:
+                    if line.find("no") != -1:
+                        testwritefile.write(line)
+                        removed_members.append(line)
+                    else:
+                        active_members = (active_members + line)
 
+with open("members.txt", "w") as writefile:
+    writefile.write(active_members)
 
 
 
